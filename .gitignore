@@ -1,12 +1,12 @@
-/.idea
 /*.iml
 /*.ipr
 /*.iws
+/*.releaseBackup
 /*/*.iml
 /*/*.ipr
 /*/*.iws
-/*/target
-/target
-/*.releaseBackup
 /*/*.releaseBackup
+/*/target
+/.idea
 /release.properties
+/target
