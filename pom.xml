@@ -138,6 +138,7 @@
                         <configuration>
                             <linksource>true</linksource>
                             <quiet>true</quiet>
+                            <failOnError>false</failOnError>
                         </configuration>
                     </execution>
                 </executions>
