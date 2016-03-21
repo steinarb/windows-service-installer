@@ -29,6 +29,20 @@
         <langpack iso3="${izpackLang}"/>
     </locale>
 
+    <natives>
+        <native type="3rdparty" name="COIOSHelper.dll" stage="both">
+            <os family="windows" />
+        </native>
+       <native type="3rdparty" name="COIOSHelper_x64.dll" stage="both">
+           <os family="windows" />
+       </native>
+    </natives>
+
+    <listeners>
+        <listener classname="RegistryInstallerListener" stage="install"/>
+        <listener classname="RegistryUninstallerListener" stage="uninstall"/>
+    </listeners>
+
     <panels>
         <panel classname="HelloPanel"/>
         <panel classname="TargetPanel"/>
