@@ -9,6 +9,9 @@
         <!-- http://izpack.org/documentation/installation-files.html#built-in-conditions -->
         <!--<run-privileged condition="izpack.windowsinstall.vista|izpack.macinstall"/>-->
     </info>
+    <registryReader>
+        <registry key="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\${izpackAppName}" name="${izpackWindowsServicePackName}" default="null" variable="${izpackAppVersion}" />
+    </registryReader>
     <guiprefs width="640" height="480" resizable="no">
         <laf name="looks">
             <os family="unix"/>
